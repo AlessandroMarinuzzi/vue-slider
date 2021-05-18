@@ -19,9 +19,12 @@
         <div class="prev" @click="prev">
             <i class="fas fa-chevron-left"></i>
         </div>
-        
+
         <div class="pic_container">
             <img :src="images[counter]" alt="">
+            <ul class="dots_bar">
+                <li class="dot" v-for="image in images"></li>
+            </ul>
         </div>
 
         <div class="next" @click="next">
