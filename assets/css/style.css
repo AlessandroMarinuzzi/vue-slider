@@ -8,6 +8,7 @@ body{
     background-image: url("https://ak.picdn.net/shutterstock/videos/22001743/thumb/1.jpg");
 }
 
+
 .title{
     color: white;
     text-align: center;
@@ -15,7 +16,7 @@ body{
     font-size: 50px;
 }
 
-#root{
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,11 +42,11 @@ img {
 .dots_bar{
     list-style: none;
     height: 40px;
-    background-color: black;
+    background-color: white;
     filter: opacity(0.7);
     position: absolute;
     left: 50%;
-    bottom: 50px;
+    bottom: -50px;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
@@ -58,11 +59,21 @@ img {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: white;
+    background-color: red;
     margin: 0 15px;
     cursor: pointer;
 }
 
 .active{
-    background-color: red;
+    background-color: rgb(0, 255, 128);
+}
+.plot_box{
+    width: 650px;
+    margin: 20px auto;
+}
+.plot{
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 20px;
 }

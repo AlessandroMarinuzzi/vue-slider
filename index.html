@@ -15,20 +15,25 @@
     <h1 class="title">The Three Flavours Cornetto Trilogy</h1>
 
     <div id="root">
-
-        <div class="prev" @click="prev">
-            <i class="fas fa-chevron-left"></i>
+        <div class="container">
+            <div class="prev" @click="prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+    
+            <div class="pic_container">
+                <img :src="images[counter]" alt="">
+                <ul class="dots_bar">
+                    <li class="dot" v-for="(image, imageCounter) in images" :class="{ active : counter === imageCounter }" @click="change(imageCounter)"></li>
+                </ul>
+            </div>
+    
+            <div class="next" @click="next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
         </div>
 
-        <div class="pic_container">
-            <img :src="images[counter]" alt="">
-            <ul class="dots_bar">
-                <li class="dot" v-for="(image, imageCounter) in images" :class="{ active : counter === imageCounter }" @click="change(imageCounter)"></li>
-            </ul>
-        </div>
-
-        <div class="next" @click="next">
-            <i class="fas fa-chevron-right"></i>
+        <div class="plot_box">
+            <p class="plot">{{plots[counter]}}</p>            
         </div>
     </div>
     <!-- VUE JS -->
