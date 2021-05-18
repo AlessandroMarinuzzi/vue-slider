@@ -34,6 +34,10 @@ const root = new Vue({
                 return this.counter = 0
             }
             return this.counter += 1
+        },
+
+        switch(counter){
+            return this.counter = counter;
         }
     }
 

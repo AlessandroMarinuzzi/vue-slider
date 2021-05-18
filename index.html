@@ -23,7 +23,7 @@
         <div class="pic_container">
             <img :src="images[counter]" alt="">
             <ul class="dots_bar">
-                <li class="dot" v-for="image in images"></li>
+                <li class="dot" v-for="(image, imageCounter) in images" :class="{ active : counter === imageCounter }"></li>
             </ul>
         </div>
 
