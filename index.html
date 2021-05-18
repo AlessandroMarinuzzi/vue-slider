@@ -19,8 +19,10 @@
         <div class="prev" @click="prev">
             <i class="fas fa-chevron-left"></i>
         </div>
-
-        <img :src="images[counter]" alt="">
+        
+        <div class="pic_container">
+            <img :src="images[counter]" alt="">
+        </div>
 
         <div class="next" @click="next">
             <i class="fas fa-chevron-right"></i>
