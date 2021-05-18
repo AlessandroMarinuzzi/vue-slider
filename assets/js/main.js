@@ -37,4 +37,12 @@ const root = new Vue({
         }
     }
 
+});
+
+document.addEventListener("keyup", function(event){
+    if(event.code === "ArrowLeft"){
+        root.prev()
+    } else if(event.code === "ArrowRight"){
+        root.next()
+    }
 })
